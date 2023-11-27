@@ -1,0 +1,75 @@
+/*Vidya V - Practice -27/11/2023*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#bg {
+  background-position: center;
+  height: 40.1rem;
+}
+
+.calsee .head {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.head>h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+body {
+  margin: 0;
+}
+
+.calculator-grid1 {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: minmax(6rem, auto) repeat(5, 5rem);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+
+.output {
+  grid-column: 1/-1;
+  word-wrap: break-word;
+  word-break: break-all;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: .75rem;
+  justify-content: space-around;
+}
+
+.calculator-grid1>button {
+  font-size: 1.5rem;
+  cursor: white;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.calculator-grid1>button:hover,
+.calculator-grid1>button:focus {
+  background-color: rgba(255, 255, 255, .9);
+  cursor: pointer;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .6);
+  font-size: 1rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
